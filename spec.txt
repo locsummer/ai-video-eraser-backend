@@ -1,0 +1,23 @@
+﻿Cần làm app https://apps.apple.com/us/app/ai-video-eraser/id6744909217?l=vi
+Dưới đây là chi tiết danh sách tính năng và phân tích về hạ tầng (server) cho ứng dụng AI Video Eraser (id6744909217) của nhà phát triển Le Giang Nam trên App Store:
+gitlab ios: https://gitlab.com/sondeptrai/videoeraser_ios 
+gitlab android https://gitlab.com/sondeptrai/videoeraser_android 
+gitlab server: https://gitlab.com/sondeptrai/videoeraser_server 
+1. Danh sách tính năng chính (Key Features)
+* Xóa vật thể AI (AI Erase Tool): Cho phép chọn và loại bỏ các đối tượng không mong muốn (người, chữ, watermark, chi tiết thừa) khỏi video và tự động tái tạo/lấp đầy phần nền (inpainting).
+* Theo dõi vật thể tự động (AI Object Tracking): AI tự động khóa và bám theo đối tượng được chọn qua từng khung hình khi đối tượng hoặc camera di chuyển.
+* Custom Mask Tracking: Cho phép người dùng vẽ vùng chọn dạng hình chữ nhật hoặc hình elip cố định để bám theo một vùng nhất định xuyên suốt các frame.
+* Cắt & Tiền xử lý video: Hỗ trợ cắt ngắn clip, chọn phân đoạn cần xử lý trước khi thực hiện xóa.
+2. Ứng dụng này có cần Server không?
+CÓ, bắt buộc phải có Backend Server.
+Dưới đây là các lý do kỹ thuật khiến một ứng dụng Video Object Removal như thế này không thể chạy 100% Offline/On-device trên điện thoại:
+1. Khối lượng tính toán xử lý Video AI (Inpainting & Tracking) rất nặng:
+   * Không giống như xóa vật thể trên ảnh tĩnh (chỉ xử lý 1 tấm), xóa vật thể trên video yêu cầu AI phải xử lý hàng chục đến hàng trăm khung hình (vd: 30fps x 10s = 300 frames) kèm theo việc duy trì sự nhất quán giữa các frame (temporal consistency).
+   * Các mô hình AI xóa vật thể video hiện đại (như ProPainter, E2FGVI, Flow-guided Inpainting...) yêu cầu VRAM GPU lớn (tối thiểu 8GB - 16GB VRAM) và công suất tính toán cao mà chip di động hiện tại khó đáp ứng trong thời gian ngắn mà không gây nóng máy/tràn RAM.
+2. Cơ chế hoạt động thực tế:
+   * Người dùng chọn vùng mask trên máy (iOS App) -> App nén & gửi video + thông tin mask lên Cloud Server / GPU Worker -> Server chạy mô hình AI để render -> Trả kết quả video đã xóa vật thể về ứng dụng để người dùng xem trước và tải về.
+3. Dung lượng App nhẹ:
+   * App chỉ có dung lượng khoảng ~196 MB. Nếu tích hợp sẵn (on-device) các mô hình AI xóa video nặng hàng GB thì size của app sẽ rất lớn.
+💡 Lưu ý về chi phí duy trì Server nếu bạn muốn phát triển ứng dụng tương tự:
+* Chi phí GPU Cloud: Bạn sẽ cần thuê GPU Cloud (như RunPod, Vast.ai, AWS EC2 g4dn/g5, hoặc GCP) để xử lý request xóa video.
+* Tối ưu hóa Queue: Cần triển khai hệ thống hàng chờ (Broker như Celery/RabbitMQ) để nhận job từ app, vì mỗi lượt render video thường mất từ 10 giây đến 1 phút tùy độ dài video.

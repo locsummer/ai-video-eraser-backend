@@ -1,0 +1,74 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: ai-video-eraser-backend
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:h2:file:./data/aivideoeraser;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: false
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+# Application specific configurations
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-ms: 86400000        # 24 hours
+    refresh-expiration-ms: 604800000 # 7 days
+  storage:
+    upload-dir: ./uploads
+    video-dir: ./uploads/videos
+    result-dir: ./uploads/results
+    thumbnail-dir: ./uploads/thumbnails
+  worker:
+    api-key: aivideo-eraser-internal-worker-secret-key-2026
+    simulated-processing: true
+    threads: 4
+    queue-capacity: 100
+  credits:
+    default-free-credits: 50
+    erase-task-credit-cost: 10
+
+# SpringDoc OpenAPI Swagger
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/index.html
+    operations-sorter: method
+    tags-sorter: alpha
+
+# Actuator Health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
