@@ -3,7 +3,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+### STS / IDE ###
 .apt_generated
 .classpath
 .factorypath
@@ -11,24 +11,31 @@ target/
 .settings
 .springBeans
 .sts4-services
-
-### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbattrs.xml
-/build/
-
-### Visual Studio Code ###
 .vscode/
+
+### Android ###
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.cxx/
+android/*.apk
+android/*.aab
+
+### iOS ###
+ios/*.xcuserdata/
+ios/*/*.xcuserdata/
+ios/*.xcworkspace/
+ios/.DS_Store
+.DS_Store
 
 ### Data and uploads ###
 data/
 uploads/
 *.log
+gh.zip
+maven.zip

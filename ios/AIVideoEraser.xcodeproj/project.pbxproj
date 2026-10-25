@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* AIVideoEraserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000 /* AIVideoEraserApp.swift */; };
+		A10003 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10002 /* AppTheme.swift */; };
+		A10005 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10004 /* AuthModels.swift */; };
+		A10007 /* VideoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10006 /* VideoModels.swift */; };
+		A10009 /* TaskModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10008 /* TaskModels.swift */; };
+		A10011 /* PlanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10010 /* PlanModels.swift */; };
+		A10013 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10012 /* APIEndpoint.swift */; };
+		A10015 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10014 /* NetworkManager.swift */; };
+		A10017 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10016 /* AuthViewModel.swift */; };
+		A10019 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10018 /* EditorViewModel.swift */; };
+		A10021 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10020 /* TaskViewModel.swift */; };
+		A10023 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10022 /* VideoPlayerView.swift */; };
+		A10025 /* MaskCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10024 /* MaskCanvasView.swift */; };
+		A10027 /* VideoTrimSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10026 /* VideoTrimSlider.swift */; };
+		A10029 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10028 /* HomeView.swift */; };
+		A10031 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10030 /* EditorView.swift */; };
+		A10033 /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10032 /* ProcessingView.swift */; };
+		A10035 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10034 /* ResultView.swift */; };
+		A10037 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10036 /* SubscriptionView.swift */; };
+		A10039 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10038 /* AuthView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000 /* AIVideoEraserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVideoEraserApp.swift; sourceTree = "<group>"; };
+		A10002 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		A10004 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		A10006 /* VideoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModels.swift; sourceTree = "<group>"; };
+		A10008 /* TaskModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModels.swift; sourceTree = "<group>"; };
+		A10010 /* PlanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModels.swift; sourceTree = "<group>"; };
+		A10012 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		A10014 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A10016 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A10018 /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
+		A10020 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		A10022 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A10024 /* MaskCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskCanvasView.swift; sourceTree = "<group>"; };
+		A10026 /* VideoTrimSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimSlider.swift; sourceTree = "<group>"; };
+		A10028 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A10030 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		A10032 /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		A10034 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		A10036 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		A10038 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A10040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10099 /* AIVideoEraser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIVideoEraser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A10050 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A10051 /* AIVideoEraser */,
+				A10099 /* AIVideoEraser.app */,
+			);
+			sourceTree = "<group>";
+		};
+		A10051 /* AIVideoEraser */ = {
+			isa = PBXGroup;
+			children = (
+				A10000 /* AIVideoEraserApp.swift */,
+				A10052 /* Models */,
+				A10053 /* Services */,
+				A10054 /* ViewModels */,
+				A10055 /* Views */,
+				A10056 /* Theme */,
+				A10040 /* Info.plist */,
+			);
+			path = AIVideoEraser;
+			sourceTree = "<group>";
+		};
+		A10052 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10004 /* AuthModels.swift */,
+				A10006 /* VideoModels.swift */,
+				A10008 /* TaskModels.swift */,
+				A10010 /* PlanModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10053 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10012 /* APIEndpoint.swift */,
+				A10014 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A10054 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10016 /* AuthViewModel.swift */,
+				A10018 /* EditorViewModel.swift */,
+				A10020 /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A10055 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10028 /* HomeView.swift */,
+				A10030 /* EditorView.swift */,
+				A10032 /* ProcessingView.swift */,
+				A10034 /* ResultView.swift */,
+				A10036 /* SubscriptionView.swift */,
+				A10038 /* AuthView.swift */,
+				A10057 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A10056 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A10002 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A10057 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A10022 /* VideoPlayerView.swift */,
+				A10024 /* MaskCanvasView.swift */,
+				A10026 /* VideoTrimSlider.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10090 /* AIVideoEraser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10095 /* Build configuration list for PBXNativeTarget "AIVideoEraser" */;
+			buildPhases = (
+				A10091 /* Sources */,
+				A10092 /* Frameworks */,
+				A10093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIVideoEraser;
+			productName = AIVideoEraser;
+			productReference = A10099 /* AIVideoEraser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = A10085 /* Build configuration list for PBXProject "AIVideoEraser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10050 /* Main */;
+			productRefGroup = A10050 /* Main */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10090 /* AIVideoEraser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* AIVideoEraserApp.swift in Sources */,
+				A10003 /* AppTheme.swift in Sources */,
+				A10005 /* AuthModels.swift in Sources */,
+				A10007 /* VideoModels.swift in Sources */,
+				A10009 /* TaskModels.swift in Sources */,
+				A10011 /* PlanModels.swift in Sources */,
+				A10013 /* APIEndpoint.swift in Sources */,
+				A10015 /* NetworkManager.swift in Sources */,
+				A10017 /* AuthViewModel.swift in Sources */,
+				A10019 /* EditorViewModel.swift in Sources */,
+				A10021 /* TaskViewModel.swift in Sources */,
+				A10023 /* VideoPlayerView.swift in Sources */,
+				A10025 /* MaskCanvasView.swift in Sources */,
+				A10027 /* VideoTrimSlider.swift in Sources */,
+				A10029 /* HomeView.swift in Sources */,
+				A10031 /* EditorView.swift in Sources */,
+				A10033 /* ProcessingView.swift in Sources */,
+				A10035 /* ResultView.swift in Sources */,
+				A10037 /* SubscriptionView.swift in Sources */,
+				A10039 /* AuthView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A10096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AIVideoEraser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivideoeraser.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AIVideoEraser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aivideoeraser.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10085 /* Build configuration list for PBXProject "AIVideoEraser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10086 /* Debug */,
+				A10087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10095 /* Build configuration list for PBXNativeTarget "AIVideoEraser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10096 /* Debug */,
+				A10097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A10080 /* Project object */;
+}
