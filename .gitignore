@@ -1,4 +1,5 @@
 target/
+server/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -35,7 +36,9 @@ ios/.DS_Store
 
 ### Data and uploads ###
 data/
+server/data/
 uploads/
+server/uploads/
 *.log
 gh.zip
 maven.zip
